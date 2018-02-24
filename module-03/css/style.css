@@ -1,0 +1,129 @@
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* NAVIGATION */
+.navigation li {
+  display: inline-block;
+  margin-top: 86px;
+  margin-bottom: 80px;
+  margin-left: 109px;
+  text-transform: uppercase;
+}
+
+.navigation a {
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  font-size: 14px;
+  color: #626262;
+}
+
+.navigation a:hover {
+  color: #e4562e;
+  transition: 0.5s;
+}
+
+/* SECTION (LEFT. RIGHT) */
+.section-left {
+  background-position: center;
+  display: inline-block;
+  width: 450px;
+}
+
+.section-right {
+  display: inline-block;
+  width: 446px;
+}
+
+.content {
+  display: inline-block;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.content span,
+h2,
+p {
+  margin-left: 15px;
+}
+
+.content span {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+}
+
+.content h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 33px;
+  font-size: 30px;
+  color: #626262;
+}
+
+.content p {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  margin-bottom: 135px;
+}
+
+/* SECTION LEFT, RIGTH /// LAST BLOCK */
+.content-end img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.content-end span,
+h2,
+p {
+  margin-left: 15px;
+}
+
+.content-end span {
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  color: #b4ad9e;
+}
+.content-end h2 {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 33px;
+  font-size: 30px;
+  color: #626262;
+}
+
+.content-end p {
+  font-family: "Playfair Display", serif;
+  color: #626262;
+  margin-bottom: 55px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.footer a {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 20px 33px;
+  color: #626262;
+  text-decoration: none;
+  margin-bottom: 70px;
+}
+
+.footer a:hover {
+  background-color: #e4562e;
+  color: #faf8f8;
+  transition-timing-function: linear;
+  transition-duration: 0.8s;
+}
