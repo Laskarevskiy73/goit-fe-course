@@ -1,15 +1,26 @@
 .wrapper {
-  width: 100%;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+
 /* NAVIGATION */
+
+.navigation {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 86px;
+  margin-bottom: 80px;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
 .navigation li {
   display: inline-block;
-  margin-top: 86px;
-  margin-bottom: 80px;
-  margin-left: 109px;
+  margin-left: 124px;
   text-transform: uppercase;
 }
 
@@ -25,105 +36,62 @@
   transition: 0.5s;
 }
 
-/* SECTION (LEFT. RIGHT) */
-.section-left {
-  background-position: center;
-  display: inline-block;
-  width: 450px;
+
+/* BODY / ARTICLE */
+
+.body {
+  width: 900px;
+  margin: 0 auto;
 }
 
-.section-right {
+.article {
   display: inline-block;
-  width: 446px;
+  width: 448px;
 }
 
-.content {
-  display: inline-block;
-}
-
-.content img {
+.article img {
   display: block;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.content span,
-h2,
-p {
+.article span, h2, p {
   margin-left: 15px;
 }
 
-.content span {
+.article span {
   text-transform: uppercase;
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   color: #b4ad9e;
 }
 
-.content h2 {
+.article h2 {
   font-family: "Playfair Display", serif;
   margin-bottom: 33px;
   font-size: 30px;
   color: #626262;
 }
 
-.content p {
+.article p {
   font-family: "Playfair Display", serif;
   color: #626262;
-  margin-bottom: 135px;
 }
 
-/* SECTION LEFT, RIGTH /// LAST BLOCK */
-.content-end img {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.content-end span,
-h2,
-p {
-  margin-left: 15px;
-}
-
-.content-end span {
-  text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 14px;
-  color: #b4ad9e;
-}
-.content-end h2 {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 33px;
-  font-size: 30px;
-  color: #626262;
-}
-
-.content-end p {
-  font-family: "Playfair Display", serif;
-  color: #626262;
-  margin-bottom: 55px;
-}
 
 /* FOOTER */
-.footer {
-  width: 100%;
-  max-width: 900px;
+
+.button {
+  max-width: 1200px;
   text-align: center;
 }
 
-.footer a {
+button {
   display: inline-block;
-  border: 1px solid black;
-  padding: 20px 33px;
-  color: #626262;
-  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  padding: 22px 33px;
+  background-color: #fff;
+  border: 1px solid #626262;
+  margin-top: 55px;
   margin-bottom: 70px;
-}
-
-.footer a:hover {
-  background-color: #e4562e;
-  color: #faf8f8;
-  transition-timing-function: linear;
-  transition-duration: 0.8s;
 }
