@@ -9,14 +9,15 @@
 
 header {
     position: relative;
-    width: var( --width-content);
+    width: var(--width-content);
     margin: 0 auto;
     padding-top: 47px;
     margin-bottom: 16px;
 }
 
-.logo {
-    font-family: var( --main-font);
+.logo a {
+    text-decoration: none;
+    font-family: var(--main-font);
     font-size: 30px;
     font-weight: 300;
     color: #555252;
@@ -24,7 +25,7 @@ header {
 
 .logo::first-letter {
     font-weight: 900;
-    color: var( --main-color);
+    color: var(--main-color);
 }
 
 nav ul {
@@ -40,7 +41,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    font-family: var( --second-font);
+    font-family: var(--second-font);
     font-size: 14px;
     font-weight: 900;
     color: #0f0101;
@@ -48,7 +49,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var( --main-color);
+    color: var(--main-color);
 }
 
 
@@ -66,7 +67,6 @@ nav a:hover {
 .big-block::after {
     position: absolute;
     top: 0;
-    left: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.3));
     width: 100%;
     height: 100%;
@@ -78,7 +78,7 @@ nav a:hover {
 
 .slider {
     position: absolute;
-    max-width: var( --width-content);
+    max-width: var(--width-content);
     z-index: 2;
     top: 225px;
     left: 0;
@@ -87,11 +87,9 @@ nav a:hover {
 }
 
 .button {
-    font-size: 50px;
     padding: 0;
     border: 0;
     cursor: pointer;
-    color: #ffffff;
     box-sizing: border-box;
 }
 
@@ -103,26 +101,25 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    background-color: var( --main-color);
-    border: 1px solid var( --main-color);
+    width: 30px;
+    height: 30px;
+    padding: 35px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .fa-angle-right {
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    background-color: var( --main-color);
-    border: 1px solid var( --main-color);
+    width: 30px;
+    height: 30px;
+    padding: 35px;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .slider-article {
-    display: inline-block;
     position: absolute;
     width: 744px;
     left: 0;
@@ -133,7 +130,7 @@ button:hover {
 .slider-article h2 {
     position: absolute;
     top: -15px;
-    font-family: var( --main-font);
+    font-family: var(--main-font);
     font-weight: 900;
     font-size: 60px;
     color: #ffffff;
@@ -143,30 +140,23 @@ button:hover {
 .slider-article p {
     position: absolute;
     top: 70px;
-    font-family: var( --main-font);
+    font-family: var(--main-font);
     font-weight: 300;
     font-size: 24px;
     color: #ffffff;
 }
 
 
-
-
-
-
-
-
-
 /* SECTION_TITLE */
 
 .wrapper-section-color {
     position: relative;
-    height: 685px;
+    height: 655px;
     background-color: #e9f0fd;
 }
 
 .section-title {
-    max-width: var( --width-content);
+    max-width: var(--width-content);
     text-align: center;
     position: absolute;
     top: 90px;
@@ -176,7 +166,7 @@ button:hover {
 }
 
 .section-title h2 {
-    font-family: var( --main-font);
+    font-family: var(--main-font);
     font-weight: 900;
     font-size: 48px;
     color: #515151;
@@ -188,13 +178,11 @@ button:hover {
     display: block;
     margin: 0 auto;
     width: 164px;
-    border-bottom: 7px solid var( --main-color);
+    border-bottom: 7px solid var(--main-color);
     margin-bottom: 80px;
 }
 
 .gallery img {
-    position: relative;
-    background-size: contain;
     width: 255px;
 }
 
@@ -218,64 +206,61 @@ button:hover {
     right: 0;
 }
 
-
-.card-icons{
+.card-icons {
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     position: absolute;
-    top: 90px;
-    width: 100%;
-    height: 100px;
+    width: 235px;
+    height: 235px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
-.card-icon{
+.card-icon {
+    position: absolute;
     display: inline-block;
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: center;
     border: 1px solid #ffffff;
-    background-color: #424242;
 }
 
-
-.card-icon:hover{
-    background-color: var( --main-color);
-}
-
-.heart{
-    position: absolute;
-    left: 45px;
+.heart {
+    top: 80px;
+    left: 34px;
     width: 50px;
     height: 50px;
     background-image: url('../img/heart.png');
 }
 
-.random{
-    position: absolute;
-    top: 0;
-    right: 101px;
+.random {
+    top: 80px;
+    right: 91px;
     width: 50px;
     height: 50px;
     background-image: url('../img/random.png');
 }
 
-.clock{
-    position: absolute;
-    right: 45px;
+.clock {
+    top: 80px;
+    right: 34px;
     width: 50px;
     height: 50px;
     background-image: url('../img/clock.png');
 }
 
-.purcshase{
-    position: absolute;
+.purcshase {
     background-position: 20px;
-    top: 58px;
+    top: 137px;
     left: 0;
     right: 0;
     margin: 0 auto;
     width: 139px;
     padding: 13px;
     color: #ffffff;
+    background-color: #323232;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -283,8 +268,6 @@ button:hover {
     text-transform: uppercase;
     background-image: url('../img/purcshase.png');
 }
-
-
 
 .block-card-bottom span {
     display: block;
@@ -294,7 +277,7 @@ button:hover {
     padding: 15px;
     color: #ffffff;
     text-align: left;
-    font-family: var( --main-font);
+    font-family: var(--main-font);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 18px;
@@ -303,33 +286,33 @@ button:hover {
 .block-card-bottom span:last-child {
     position: absolute;
     right: 0;
-    bottom: 3px;
-    display: inline-block;
     background-color: #8c8c8c;
 }
 
 
-/* .gallery:hover p{
-    background-color: var( --main-color );
+/* HOVER */
+
+.gallery:hover .card-icons {
+    display: block;
 }
-.gallery:hover p:last-child{
+
+.card-icon:hover {
+    background-color: var(--main-color);
+}
+
+.gallery:hover > .block-card-bottom span {
+    background-color: var(--main-color);
+}
+
+.gallery:hover > .block-card-bottom span:last-child {
     background-color: #7fd9c7;
-} */
-
-
-
-
-
-
-
-
+}
 
 
 /* FOOTER */
 
 footer {
     position: static;
-    width: 100%;
     height: 88px;
     background-color: #323232;
 }
@@ -337,7 +320,6 @@ footer {
 footer p {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-    font-size: 16px;
     padding-top: 39px;
     text-align: center;
 }
