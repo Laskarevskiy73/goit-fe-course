@@ -1,0 +1,56 @@
+.wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    display: block;
+    width: 200px;
+    height: auto;
+    padding: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #424242;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.wrap {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #212121;
+    height: 650px;
+    /* margin-bottom: 70px; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards-people{
+    width: 300px;
+    height: 597px;
+    background-color: teal;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-image{
+
+    margin-top: 10px;
+    width: 230px;
+    height: 230px;
+}
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
