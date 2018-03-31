@@ -96,7 +96,6 @@
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
-    align-content: center;
 }
 
 .box h4 {
@@ -116,11 +115,19 @@
     letter-spacing: -1px;
 }
 
+
+/* CONTAINER-FORM */
+
 .container-form {
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .wrap-map {
+    margin: 0 auto;
+    background-color: var(--main-color);
     background-image: url('../img/map.png');
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -149,6 +156,7 @@
 .contact span {
     font-family: 'droid_serifitalic';
     color: #777777;
+    margin-bottom: 80px;
 }
 
 .wrap-form {
@@ -181,6 +189,9 @@ form {
     font-size: 14px;
     text-transform: uppercase;
 }
+
+
+/*FOCUS :invalid / :valid */
 
 .input-form input:required:focus:invalid {
     outline: 2px solid #ef5350;
