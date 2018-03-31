@@ -116,16 +116,41 @@
     letter-spacing: -1px;
 }
 
-.wrap-map{
+.container-form {
+    width: 100%;
     background-color: var(--main-color);
+    height: 675px;
 }
 
-.wrap-form{
-    max-width: 100%;
-    height: 676px;
+.wrap-map {
+    width: 1400px;
     margin: 0 auto;
-    background-color: var(--main-color);
     background-image: url('../img/map.png');
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: bottom right;;
+    height: 100%;
+    display: flex;
+    opacity: 0.30;
+}
+
+.contact{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+}
+
+.contact h2{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.contact span{
+    font-family: 'droid_serifitalic';
+    color: #777777;
 }
