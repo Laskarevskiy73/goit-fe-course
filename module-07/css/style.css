@@ -117,22 +117,19 @@
 }
 
 .container-form {
-    width: 100%;
     background-color: var(--main-color);
-    height: 675px;
 }
 
 .wrap-map {
-    width: 1400px;
-    margin: 0 auto;
     background-image: url('../img/map.png');
     background-repeat: no-repeat;
-    background-position: bottom right;;
-    height: 100%;
+    background-position: bottom right;
+    width: 1400px;
+    height: 550px;
     opacity: 0.30;
 }
 
-.contact{
+.contact {
     width: 940px;
     margin: 0 auto;
     display: flex;
@@ -141,7 +138,7 @@
     padding-top: 110px;
 }
 
-.contact h2{
+.contact h2 {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 40px;
@@ -149,7 +146,70 @@
     margin-bottom: 25px;
 }
 
-.contact span{
+.contact span {
     font-family: 'droid_serifitalic';
     color: #777777;
+    margin-bottom: 78px;
+}
+
+.wrap-form {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+}
+
+.input-form input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #bbbbbb;
+    margin-bottom: 28px;
+    margin-right: 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.message{
+    width: 470px;
+}
+
+.message textarea{
+    width: 100%;
+    height: 209px;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #bbbbbb;
+    padding: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+}
+
+.submit {
+    margin: 0 auto;
+    padding: 15px 45px;
+    border-radius: 3px;
+    border: 1px solid var(--second-color);
+    background-color: var(--second-color);
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 65px;
 }
