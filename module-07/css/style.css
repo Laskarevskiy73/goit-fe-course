@@ -44,6 +44,7 @@
 
 .menu a:hover {
     color: var(--second-color);
+    transition: all 200ms linear;
 }
 
 
@@ -195,18 +196,22 @@ form {
 
 .input-form input:required:focus:invalid {
     outline: 2px solid #ef5350;
+    transition: all 200ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .input-form input:required:focus:valid {
     outline: 2px solid #43a047;
+    transition: all 200ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .message textarea:required:focus:invalid {
     outline: 2px solid #ef5350;
+    transition: all 200ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .message textarea:required:focus:valid {
     outline: 2px solid #43a047;
+    transition: all 200ms cubic-bezier(.17, .67, .83, .67);
 }
 
 .message {
