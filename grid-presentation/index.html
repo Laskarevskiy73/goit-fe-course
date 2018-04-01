@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="button"><a href="#">Up</a></button>
+        <div class="background">
+            <!-- header -->
+            <div class="header">
+                <div class="logo">
+                    <a href="#">css grid</a>
+                </div>
+                <nav>
+                    <ul id="menu"class="menu">
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#browser">Совместимость</a>
+                        </li>
+                        <li>
+                            <a href="#properties">Основные свойства</a>
+                        </li>
+                        <li>
+                            <a href="#examples">Примеры</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- content -->
+            <div class="content">
+                <div class="container">
+                    <h2 class="caption">Введение</h2>
+                    <p class="text">CSS Grid Layout - самая мощная система компоновки из доступных на данный момент в CSS. Это двумерная
+                        система, которая может обрабатывать как колонки так и строки, в отличии от Flexbox, который в значительной
+                        степени является одномерной системой. При работе с CSS Grid, вы применяете CSS правила и родительским
+                        элементам (которые становятся Grid контейнерами) и к дочерним элементам (которые становятся Grid
+                        элементами).
+                    </p>
+                    <h2 id="browser" class="caption">Совместимость с браузерами</h2>
+                    <img src="./img/X8Xt8P1.png" alt="сompatibility with browsers">
+                </div>
+                <h2 id="properties" class="caption">Основные свойства</h2>
+                <div class="container-2">
+                    <div class="item item-1">
+                        <h4>
+                            <span>#</span> display</h4>
+                        <p>Определяет элемент как контейнер и устанавливает новый контекст форматирования сетки для его содержимого</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-display" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-2">
+                        <h4>
+                            <span>#</span> grid-template-columns</h4>
+                        <p>Определяет колонки сетки с помощью списка значений разделённого пробелами. Значения представляют
+                            из себя размер трека, а пробелы между ними представляют линии сетки.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-template-columns-rows" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-3">
+                        <h4>
+                            <span>#</span> grid-tempate-rows</h4>
+                        <p>Определяет строки сетки с помощью списка значений разделённого пробелами. Значения представляют из
+                            себя размер трека, а пробелы между ними представляют линии сетки.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-template-columns-rows" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-4">
+                        <h4>
+                            <span>#</span> grid-auto-columns</h4>
+                        <p>Определяет размер любых автоматически созданных треков (иначе говоря, неявных треков). Неявные треки
+                            создаются при явном позиционировании столбцов и строк (через grid-template-rows/grid-template-columns),
+                            которые находятся за пределами заданной сетки.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-auto-columns-rows" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-5">
+                        <h4>
+                            <span>#</span> grid-auto-rows</h4>
+                        <p>Определяет размер любых автоматически созданных треков (иначе говоря, неявных треков). Неявные треки
+                            создаются при явном позиционировании столбцов и строк (через grid-template-rows/grid-template-columns),
+                            которые находятся за пределами заданной сетки.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-auto-columns-rows" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-6">
+                        <h4>
+                            <span>#</span> grid-column-gap</h4>
+                        <p>Определяет размер ширины линий. Вы можете думать об этом, как о настройке ширины отступов между столбцами</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-column-row-gap" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-7">
+                        <h4>
+                            <span>#</span> grid-gap</h4>
+                        <p>Сокращение для grid-row-gap и grid-column-gap.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-gap" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-8">
+                        <h4>
+                            <span>#</span> grid-auto-flow</h4>
+                        <p>Если у вас есть элементы, которые вы явно не позиционируете в сетке, запускается алгоритм авто-размещения,
+                            чтобы их автоматически разместить. Это свойство контролирует то как алгоритм авто-размещения
+                            работает.
+                        </p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-auto-flow" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-9">
+                        <h4>
+                            <span>#</span> grid-column-start</h4>
+                        <p>Определяют местоположение в сетке ссылаясь на конкретные линии. grid-column-start/grid-row-start
+                            - это линия с которой начинается элемент, а grid-column-end/grid-row-end - это линия на которой
+                            элемент заканчивается.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-column-row-start-end" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-10">
+                        <h4>
+                            <span>#</span> grid-column-end</h4>
+                        <p>Определяют местоположение в сетке ссылаясь на конкретные линии. grid-column-start/grid-row-start
+                            - это линия с которой начинается элемент, а grid-column-end/grid-row-end - это линия на которой
+                            элемент заканчивается.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-column-row-start-end" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-11">
+                        <h4>
+                            <span>#</span> grid-row-start</h4>
+                        <p>Определяют местоположение в сетке ссылаясь на конкретные линии. grid-column-start/grid-row-start
+                            - это линия с которой начинается элемент, а grid-column-end/grid-row-end - это линия на которой
+                            элемент заканчивается.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-column-row-start-end" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-12">
+                        <h4>
+                            <span>#</span> grid-row-end</h4>
+                        <p>Определяют местоположение в сетке ссылаясь на конкретные линии. grid-column-start/grid-row-start
+                            - это линия с которой начинается элемент, а grid-column-end/grid-row-end - это линия на которой
+                            элемент заканчивается.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-column-row-start-end" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-13">
+                        <h4>
+                            <span>#</span> grid-area</h4>
+                        <p>Даёт название элементу чтобы можно было ссылаться на него с помощью шаблона созданного через grid-template-areas
+                            свойство. В качестве альтернативы, это свойство может быть использовано в качестве сокращения
+                            для grid-row-start + grid-column-start + grid-row-end + grid-column-end.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-area" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-14">
+                        <h4>
+                            <span>#</span> grid-template-areas</h4>
+                        <p>Определяет шаблон сетки ссылаясь на имена областей, которые заданы с помощью свойства grid-area.
+                            Повторение названия области приводит к тому, что содержимое охватывает эти ячейки. Точка означает
+                            пустую ячейку. Сам синтаксис предоставляет визуализацию структуры сетки.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-template-areas" target="_blank">Больше информации</a>
+                    </div>
+                    <div class="item item-15">
+                        <h4>
+                            <span>#</span> grid-template</h4>
+                        <p>Сокращение для grid-template-rows, grid-template-columns, и grid-template-areas.</p>
+                        <a href="https://tuhub.ru/posts/css-grid-complete-guide#prop-grid-template" target="_blank">Больше информации</a>
+                    </div>
+                </div>
+                <h2 id="examples" class="caption">Примеры</h2>
+                <div class="container-3">
+                    <div class="example example-1">
+                        <p data-height="265" data-theme-id="dark" data-slug-hash="QmraGv" data-default-tab="css,result" data-user="Laskarevskiy73"
+                            data-embed-version="2" data-pen-title="QmraGv" class="codepen">See the Pen
+                            <a href="https://codepen.io/Laskarevskiy73/pen/QmraGv/">QmraGv</a> by Andrey (
+                            <a href="https://codepen.io/Laskarevskiy73">@Laskarevskiy73</a>) on
+                            <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="example example-2">
+                        <p data-height="265" data-theme-id="dark" data-slug-hash="rdvdjW" data-default-tab="css,result" data-user="Laskarevskiy73"
+                            data-embed-version="2" data-pen-title="rdvdjW" class="codepen">See the Pen
+                            <a href="https://codepen.io/Laskarevskiy73/pen/rdvdjW/">rdvdjW</a> by Andrey (
+                            <a href="https://codepen.io/Laskarevskiy73">@Laskarevskiy73</a>) on
+                            <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="example example-3">
+                        <p data-height="265" data-theme-id="dark" data-slug-hash="RMyMVe" data-default-tab="css,result" data-user="Laskarevskiy73"
+                            data-embed-version="2" data-pen-title="RMyMVe" class="codepen">See the Pen
+                            <a href="https://codepen.io/Laskarevskiy73/pen/RMyMVe/">RMyMVe</a> by Andrey (
+                            <a href="https://codepen.io/Laskarevskiy73">@Laskarevskiy73</a>) on
+                            <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="example example-4">
+                        <p data-height="265" data-theme-id="dark" data-slug-hash="pLVLrg" data-default-tab="css,result" data-user="Laskarevskiy73"
+                            data-embed-version="2" data-pen-title="pLVLrg" class="codepen">See the Pen
+                            <a href="https://codepen.io/Laskarevskiy73/pen/pLVLrg/">pLVLrg</a> by Andrey (
+                            <a href="https://codepen.io/Laskarevskiy73">@Laskarevskiy73</a>) on
+                            <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                    <div class="example example-5">
+                        <p data-height="265" data-theme-id="dark" data-slug-hash="JLvLpp" data-default-tab="css,result" data-user="Laskarevskiy73"
+                            data-embed-version="2" data-pen-title="JLvLpp" class="codepen">See the Pen
+                            <a href="https://codepen.io/Laskarevskiy73/pen/JLvLpp/">JLvLpp</a> by Andrey (
+                            <a href="https://codepen.io/Laskarevskiy73">@Laskarevskiy73</a>) on
+                            <a href="https://codepen.io">CodePen</a>.</p>
+                        <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+           $("#menu").on("click","a", function (event) {
+               event.preventDefault();
+               var id  = $(this).attr('href'),
+                   top = $(id).offset().top;
+               $('body,html').animate({scrollTop: top}, 1500);
+           });
+       });
+       </script>
+</body>
+
+</html>

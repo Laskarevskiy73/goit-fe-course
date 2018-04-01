@@ -1,0 +1,156 @@
+.wrapper {
+    max-width: 100%;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.button{
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    opacity: 0.10;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button:hover{
+    opacity: 0.90;
+    transition: all 200ms linear;
+}
+
+.background {
+    background: linear-gradient(#010003, #000203, #010003);
+    width: 100%;
+    height: 3500px;
+    background-size: cover;
+    padding-top: 90px;
+}
+
+.header {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.logo a {
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    text-shadow: black 6px 6px 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-right: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: black 6px 6px 4px;
+}
+
+.menu a:hover {
+    color: var(--main-color);
+    transition: all 200ms linear;
+}
+
+.content {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.container {
+    color: whitesmoke;
+}
+
+.caption {
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    color: whitesmoke;
+    text-shadow: black 6px 6px 4px;
+}
+
+.container .text {
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 50px;
+}
+
+.container img {
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    flex-basis: 200px;
+    flex-direction: column;
+    color: whitesmoke;
+    padding: 15px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.item h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.item span {
+    color: var(--main-color);
+}
+
+.item p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.item a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* .iteam a:hover{
+    transition: all 200ms linear;
+} */
+
+.example {
+    margin-bottom: 40px;
+}
