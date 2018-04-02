@@ -121,20 +121,14 @@
 
 .container-form {
     background-color: var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .wrap-map {
     margin: 0 auto;
-    background-color: var(--main-color);
     background-image: url('../img/map.png');
     background-repeat: no-repeat;
     background-position: bottom right;
     width: 1400px;
-    height: 550px;
-    opacity: 0.30;
 }
 
 .contact {
@@ -160,11 +154,6 @@
     margin-bottom: 80px;
 }
 
-.wrap-form {
-    width: 940px;
-    margin: 0 auto;
-}
-
 form {
     display: flex;
     flex-wrap: wrap;
@@ -173,8 +162,7 @@ form {
 .input-form {
     display: flex;
     flex-wrap: wrap;
-    width: 470px;
-    align-self: flex-start;
+    flex-basis: 470px;
 }
 
 .input-form input {
@@ -243,5 +231,5 @@ form {
     font-family: 'Montserrat';
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 65px;
+    margin-bottom: 115px;
 }
