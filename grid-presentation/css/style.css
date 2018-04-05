@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 
-.button{
+.button {
     position: fixed;
     bottom: 70px;
     right: 20px;
@@ -15,22 +15,23 @@
     padding: 15px;
 }
 
-.button a{
+.button a {
     text-decoration: none;
     color: whitesmoke;
 }
 
-.button:hover{
+.button:hover {
     opacity: 0.90;
     transition: all 200ms linear;
 }
 
 .background {
-    background: linear-gradient(#010003, #000203, #010003);
+    background: linear-gradient(#232526, #414345);
     width: 100%;
-    height: 3500px;
+    height: 3700px;
     background-size: cover;
     padding-top: 90px;
+    text-shadow: 0px 5px 5px #424242;
 }
 
 .header {
@@ -53,6 +54,10 @@
 
 .menu {
     display: flex;
+    padding: 15px;
+    border: 1px solid var( --main-color);
+    border-radius: 5px;
+    box-shadow: 0px 1px 20px var(--main-color);
 }
 
 .menu li {
@@ -91,6 +96,9 @@
     margin-left: 80px;
     color: whitesmoke;
     text-shadow: black 6px 6px 4px;
+    padding: 15px;
+    border-bottom: 1px solid var( --main-color);
+    border-radius: 7px;
 }
 
 .container .text {
@@ -102,6 +110,12 @@
     width: 100%;
     background-size: cover;
     margin-bottom: 50px;
+    opacity: 0.50;
+}
+
+.container img:hover {
+    opacity: 1;
+    transition: all 200ms linear;
 }
 
 .container-2 {
@@ -118,6 +132,22 @@
     padding: 15px;
     justify-content: space-between;
     margin-bottom: 30px;
+}
+
+.item:hover h4 {
+    color: var(--main-color);
+    transition: all 200ms linear;
+    transform: translateY(-5px);
+}
+
+.item:hover span {
+    color: #0277bd;
+    transition: all 200ms linear;
+}
+
+a:hover {
+    transform: scale(1.1);
+    transition: all 200ms linear;
 }
 
 .item h4 {
@@ -146,7 +176,6 @@
     border-radius: 5px;
     padding: 5px;
 }
-
 
 .example {
     margin-bottom: 40px;
