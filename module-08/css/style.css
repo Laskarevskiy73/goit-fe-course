@@ -18,7 +18,6 @@
 
 .nav {
     display: flex;
-    width: 48%;
     justify-content: space-between;
     align-items: center;
     padding-top: 19px;
@@ -31,7 +30,11 @@
     font-family: var(--main-font);
     font-size: 14px;
     font-weight: 700;
-    /* margin-bottom: 115px; */
+    margin-right: 20px;
+}
+
+.button:last-child{
+    margin-right: 0;
 }
 
 .button:last-child {
@@ -40,7 +43,8 @@
     border-radius: 21px;
 }
 
-.span-deco {
+.logo {
+    text-decoration: none;
     font-family: var(--main-font);
     color: #ffffff;
     font-weight: 700;
@@ -94,18 +98,19 @@ h1 {
     margin-bottom: 20px;
 }
 
-.team{
+.team {
     width: 215px;
 }
+
 .box {
     margin-bottom: 20px;
 }
 
-.box:last-child{
+.box:last-child {
     margin-bottom: 0;
 }
 
-.team{
+.team {
     margin-bottom: 30px;
 }
 
@@ -135,11 +140,11 @@ h1 {
     background-color: #ffa507;
 }
 
-.icon-green{
+.icon-green {
     background-color: #1cd7ad;
 }
 
-.icon-blue{
+.icon-blue {
     background-color: #4e73db;
 }
 
@@ -165,7 +170,7 @@ h1 {
     text-align: center;
 }
 
-.bottom-link{
+.bottom-link {
     text-decoration: none;
     color: var(--main-color);
     font-family: var(--main-font);
@@ -175,4 +180,28 @@ h1 {
     border: 2px solid var(--main-color);
     border-radius: 23px;
     margin-bottom: 57px;
+}
+
+
+/* ========================================== */
+
+@media (min-width: 768px) {
+    .wrapper {
+        min-width: 768px;
+        margin: 0 auto;
+    }
+    .head {
+        background-image: url('../img/bg-tablet.png');
+
+    }
+    .nav {
+        margin-bottom: 0;
+    }
+    .button{
+        margin-right: 20px;
+    }
+
+    .logo{
+        
+    }
 }
