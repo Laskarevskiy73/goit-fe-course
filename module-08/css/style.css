@@ -1,7 +1,9 @@
+/* @import 'tablet.css';
+@import 'desctop.css'; */
+
 .wrapper {
     width: 320px;
     min-width: 320px;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -14,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 70px;
+    background-position: center;
 }
 
 .nav {
@@ -33,7 +36,7 @@
     margin-right: 20px;
 }
 
-.button:last-child{
+.button:last-child {
     margin-right: 0;
 }
 
@@ -95,7 +98,7 @@ h1 {
     font-weight: 700;
     font-size: 22px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .team {
@@ -126,7 +129,6 @@ h1 {
     bottom: 0px;
     width: 16px;
     height: 16px;
-    display: block;
     padding: 10px;
     border: 3px solid #ffffff;
     border-radius: 50%;
@@ -159,7 +161,7 @@ h1 {
     font-weight: 700;
     font-size: 14px;
     color: #333333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .wrap-text p {
@@ -179,29 +181,11 @@ h1 {
     padding: 13px 70px;
     border: 2px solid var(--main-color);
     border-radius: 23px;
-    margin-bottom: 57px;
+    margin-bottom: 37px;
 }
 
-
-/* ========================================== */
-
-@media (min-width: 768px) {
-    .wrapper {
-        min-width: 768px;
-        margin: 0 auto;
-    }
-    .head {
-        background-image: url('../img/bg-tablet.png');
-
-    }
-    .nav {
-        margin-bottom: 0;
-    }
-    .button{
-        margin-right: 20px;
-    }
-
-    .logo{
-        
-    }
+button{
+    cursor: pointer;
+    padding: 0;
+    border: none;
 }

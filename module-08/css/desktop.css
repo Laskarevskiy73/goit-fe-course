@@ -1,0 +1,28 @@
+@media (min-width: 1440px){
+   .wrapper{ 
+       min-width: 1440px;
+       margin: 0 auto;
+   }
+
+   .head{
+       background-image: url('../img/bg-desktop.png');
+   }
+
+   .nav{ 
+       display: flex;
+       justify-content: flex-end;
+       width: 940px;
+   }
+
+   .box{
+       flex-basis: 220px;
+   }
+
+
+   .team{
+       display: flex;
+       width: 940px;
+       justify-content: space-between;
+   }
+
+}
