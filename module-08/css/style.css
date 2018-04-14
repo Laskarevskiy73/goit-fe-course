@@ -1,9 +1,5 @@
-/* @import 'tablet.css';
-@import 'desctop.css'; */
-
 .wrapper {
     width: 320px;
-    min-width: 320px;
     margin: 0 auto;
 }
 
@@ -15,16 +11,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
     background-position: center;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 19px;
-    margin-bottom: 115px;
+    padding-top: 33px;
+    text-align: center;
 }
 
 .button {
@@ -36,14 +29,16 @@
     margin-right: 20px;
 }
 
-.button:last-child {
+.button:nth-child(2) {
+    padding: 7px 15px;
+    border: 2px solid #ffffff;
+    border-radius: 21px;
     margin-right: 0;
 }
 
-.button:last-child {
-    padding: 10px 15px;
-    border: 3px solid #ffffff;
-    border-radius: 21px;
+.wrap-logo {
+    padding-top: 130px;
+    margin-bottom: 30px;
 }
 
 .logo {
@@ -52,7 +47,10 @@
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
-    margin-bottom: 32px;
+}
+
+.wrap-cont {
+    text-align: center;
 }
 
 h1 {
@@ -72,13 +70,14 @@ h1 {
     font-size: 18px;
     color: #ffffff;
     text-align: center;
-    margin-bottom: 16px;
+    padding: 0px 50px;
+    margin-bottom: 33px;
 }
 
 .link {
     text-decoration: none;
     color: #ffffff;
-    padding: 15px 47px;
+    padding: 13px 47px;
     background-color: var(--main-color);
     border-radius: 25px;
     font-family: var(--main-font);
@@ -101,12 +100,9 @@ h1 {
     margin-bottom: 15px;
 }
 
-.team {
-    width: 215px;
-}
-
 .box {
-    margin-bottom: 20px;
+    width: 215px;
+    margin-bottom: 28px;
 }
 
 .box:last-child {
@@ -114,11 +110,11 @@ h1 {
 }
 
 .team {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .box-img {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
     text-align: center;
     position: relative;
 }
@@ -181,10 +177,10 @@ h1 {
     padding: 13px 70px;
     border: 2px solid var(--main-color);
     border-radius: 23px;
-    margin-bottom: 37px;
+    margin-bottom: 57px;
 }
 
-button{
+button {
     cursor: pointer;
     padding: 0;
     border: none;
