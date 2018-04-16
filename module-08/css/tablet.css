@@ -1,6 +1,7 @@
-@media (min-width: 791px) {
+/* Посмотреть с врап */
+@media (min-width: 767px) {
     .wrapper {
-        min-width: 769px;
+        width: 768px;
         margin: 0 auto;
     }
     .head {
