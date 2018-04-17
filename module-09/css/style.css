@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 .wrap {
     width: 320px;
     margin: 0 auto;
@@ -6,53 +8,84 @@
 .bg-mobile {
     background-image: url('../img/bg-mobile.png');
     background-repeat: no-repeat;
-    height: 540px;
     margin: 0 auto;
+    margin-bottom: 65px;
 }
-
-.wrap-menu {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+/* ============== Header ============== */
+.menu {
     padding-top: 28px;
-    margin-bottom: 120px;
+    margin-bottom: 115px;
 }
 
 .menu-link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
     color: #ffffff;
-    margin-right: 19px;
     text-decoration: none;
+    padding: 10px 16px;
+    border: 2px solid transparent;
+    border-radius: 30px;
 }
 
 .menu-link:hover {
     text-decoration: none;
     color: #ffffff;
-}
-
-.menu-link:nth-child(2) {
     padding: 10px 16px;
     border: 2px solid #ffffff;
     border-radius: 30px;
-    margin-right: 0;
 }
 
-.wrap-logo {
-    display: flex;
-    justify-content: center;
-}
-
-.logo {
+.logo-link {
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--main-font);
     font-weight: 700;
     font-size: 20px;
     color: #ffffff;
+    margin-bottom: 19px;
 }
 
-.logo:hover {
+.logo-link:hover {
     text-decoration: none;
     color: #ffffff;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-size: 29px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.ideal-partner {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 0px 52px;
+}
+
+.find-partner {
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--main-color);
+    padding: 10px 47px;
+    border-radius: 25px;
+    margin-bottom: 137px;
+}
+
+.find-partner:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ============== Section ============== */
+
+h2{
+    font-family: var(--main-font);
+    font-size: 22px;
+    font-weight: 700;
+    color: #333333;
 }
