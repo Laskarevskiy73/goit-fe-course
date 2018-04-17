@@ -1,6 +1,6 @@
-@media (min-width: 1439px) {
+@media (min-width: 1440px) {
     .wrapper {
-        min-width: 1440px;
+        width: 1440px;
         margin: 0 auto;
     }
     .head {

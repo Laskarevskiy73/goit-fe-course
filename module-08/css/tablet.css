@@ -1,5 +1,4 @@
-/* Посмотреть с врап */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .wrapper {
         width: 768px;
         margin: 0 auto;
