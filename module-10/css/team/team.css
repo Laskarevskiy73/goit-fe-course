@@ -27,6 +27,9 @@
     list-style: none;
     padding: 0;
 }
+.img-gradient{
+    margin-bottom: 15px;
+}
 
 .img-gradient::after {
     position: absolute;
@@ -47,7 +50,6 @@
 .img {
     width: 380px;
     height: 470px;
-    margin-bottom: 15px;
 }
 
 .wrap-social {
