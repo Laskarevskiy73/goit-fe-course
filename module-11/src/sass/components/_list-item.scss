@@ -1,0 +1,39 @@
+.list-item {
+    display: flex;
+}
+
+.list-item__icon {
+    fill: $icon-color;
+    margin-right: 29px;
+}
+
+.list-text__caption {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $deco-color;
+    margin-bottom: 20px;
+}
+
+.list-text__text {
+    font-family: $list-text-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $list-text-color;
+    margin-bottom: 104px;
+}
+
+.team-text {
+    margin: 0 auto;
+}
+
+.team-text__deco {
+    font-family: $list-text-font;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $list-text-color;
+    text-align: center;
+    margin-bottom: 95px;
+}

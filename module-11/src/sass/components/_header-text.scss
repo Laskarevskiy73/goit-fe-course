@@ -1,0 +1,40 @@
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header-text__creative {
+    font-family: $deco-font;
+    font-size: 72px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+h1 {
+    font-family: $main-font;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 140px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 110px;
+}
+
+.header-text__creative--link {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 12px 30px;
+    border: 3px solid #ffffff;
+    margin-bottom: 195px;
+    &:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}

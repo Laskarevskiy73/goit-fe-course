@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "RobotoBold";
-    src: url("../fonts/RobotoBold/RobotoBold.eot") format("eot"),
-      url("../fonts/RobotoBold/RobotoBold.ttf") format("ttf"),
-      url("../fonts/RobotoBold/RobotoBold.woff") format("woff");
-  }
-  
-  @font-face {
-    font-family: "RobotoRegular";
-    src: url("../fonts/RobotoRegular/RobotoRegular.eot") format("eot"),
-      url("../fonts/RobotoRegular/RobotoRegular.ttf") format("ttf"),
-      url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff");
-  }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');

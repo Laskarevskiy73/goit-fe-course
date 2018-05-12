@@ -1,0 +1,30 @@
+.wrap-captions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap-captions__deco {
+    font-family: $deco-font;
+    font-size: 24px;
+    font-weight: 400;
+    color: $deco-color;
+    margin-bottom: 24px;
+}
+
+.wrap-captions__text {
+    font-family: $main-font;
+    font-size: 30px;
+    font-weight: 700;
+    color: $deco-color;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+    &::after {
+        content: '';
+        display: block;
+        padding-bottom: 43px;
+        border-bottom: 3px solid $brand-color;
+        width: 60px;
+        margin: 0 auto;
+    }
+}

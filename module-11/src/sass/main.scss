@@ -1,14 +1,23 @@
+// ========================
+
 @import "vars";
 @import "fonts";
 @import "libs";
 @import "mixins";
 
+// ========================
 
-.p{
-    color: $main-color;
-}
+// ========================
 
+@import "components/_common";
+@import "components/_nav";
+@import "components/_header-text";
+@import "components/_wrap-captions";
+@import "components/_list-item";
+@import "components/_team";
+@import "components/_footer";
 
+// ========================
 
 
 

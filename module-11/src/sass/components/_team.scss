@@ -1,0 +1,111 @@
+.team {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.img-background {
+    position: relative;
+    width: 370px;
+    height: 470px;
+    background-color: $icon-color;
+    margin-bottom: 160px;
+}
+
+.img-gradient {
+    margin-bottom: 31px;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9));
+        width: 370px;
+        height: 470px;
+        z-index: 4;
+        opacity: 0;
+    }
+}
+
+.team-img {
+    position: relative;
+    width: 370px;
+    height: 470px;
+}
+
+.wrap-social {
+    opacity: 0;
+}
+
+.social {
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 70px;
+    z-index: 5;
+}
+
+.social__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $brand-color;
+    padding: 15px;
+    background-color: $menu-color;
+    opacity: 0;
+    &:last-child {
+        border-right: none;
+    }
+    &:hover {
+        background-color: $brand-color;
+        fill: #ffffff;
+    }
+}
+
+.social__items--link {
+    fill: $brand-color;
+}
+
+// Hover
+.img-gradient:hover::after {
+    opacity: 1;
+}
+
+.img-gradient:hover {
+    transform: translate(-10px, -10px);
+    transition: all 200ms linear;
+}
+
+.img-gradient:hover .social__items {
+    transition: all 200ms linear;
+    opacity: 1;
+}
+
+.social__items:hover>.social__items--link {
+    fill: #ffffff;
+}
+
+// ====================================
+.team-people {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-people__name {
+    font-family: $main-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $deco-color;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.team-people__position {
+    font-family: $list-text-font;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: $list-text-color;
+}
