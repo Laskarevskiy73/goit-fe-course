@@ -35,3 +35,4 @@ https://laskarevskiy73.github.io/goit-fe-course-html-css/module-11/build/index.h
 ## GridCSS Presentation
 https://laskarevskiy73.github.io/goit-fe-course-html-css/grid-presentation/index.html
 
+# author: Laskarevskiy Andriy
