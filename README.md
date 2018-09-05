@@ -30,6 +30,5 @@ https://laskarevskiy73.github.io/goit-fe-course-html-css/module-09/index.html
 https://laskarevskiy73.github.io/goit-fe-course-html-css/module-10/index.html
 
 #### Module-11
-https://laskarevskiy73.github.io/goit-fe-course-html-css/module-11/index.html
-
+https://laskarevskiy73.github.io/goit-fe-course-html-css/module-11/build/index.html
 
